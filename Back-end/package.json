@@ -1,5 +1,5 @@
 {
-  "name": "TTB_Store",
+  "name": "ttb_store",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -20,7 +20,7 @@
     "swagger-ui-express": "^4.1.4"
   },
   "scripts": {
-    "start": "node index.js",
+    "start": "nodemon index.js",
     "dev": "set NODE_ENV=development&&nodemon --inspect index.js",
     "test": "set NODE_ENV=production&&nodemon --inspect index.js"
   },

@@ -22,7 +22,7 @@ const sendEmail = async ({ to, subject, text, html, ...rest }) => {
       //config mail
       const mail = {
         //sender access
-        from: '"TTB Store" <no-reply@accounts.ttb-store.com>',
+        from: '"TTB Store" <huynh.it.24@gmail.com>',
         //receiver access
         to,
         //subject
