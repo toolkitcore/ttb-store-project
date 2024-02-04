@@ -40,10 +40,10 @@
       font-size: #{$i}px !important;
     }
     &-#{$i*0.05}rem {
-      font-size: #{$i * 0.05}rem !important;
+      font-size: #{$i * 5}rem !important;
     }
     &-#{$i*0.05}em {
-      font-size: #{$i * 0.05}em !important;
+      font-size: #{$i * 5}em !important;
     }
   }
 }
