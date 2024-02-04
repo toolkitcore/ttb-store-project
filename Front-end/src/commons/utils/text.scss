@@ -39,11 +39,11 @@
     &-#{$i}px {
       font-size: #{$i}px !important;
     }
-    &-#{$i*0.05}rem {
-      font-size: #{$i * 5}rem !important;
+    &-#{$i*5}rem {
+      font-size: #{$i * 0.05}rem !important;
     }
-    &-#{$i*0.05}em {
-      font-size: #{$i * 5}em !important;
+    &-#{$i*5}em {
+      font-size: #{$i * 0.05}em !important;
     }
   }
 }
