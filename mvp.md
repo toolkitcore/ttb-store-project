@@ -340,4 +340,359 @@
  ┣ 📜.local.env
  ┗ 📜index.js
 
- 
+# Schemas
+
+account:email,password,googleId,authType,failedLoginTimes,refreshToken
+admin:userName,password,email,fullName,age,phone,fb,address
+deliveryAddress:user,list:name,phone,address
+
+ # APIs
+
+ http://localhost:5000
+ /api-docs
+ /apis/admin
+    /products GET
+    /products/remove DELETE
+    /products/add POST
+    /products/update PUT
+    /login POST
+    /users GET
+    /customer GET
+    /customer/del DELETE
+    /order GET
+    /order POST
+ /apis/address
+    /province GET
+    /district GET
+    /street GET 
+    /delivery GET
+    /delivery POST
+    /delivery DELETE
+    /delivery PUT
+ /apis/accounts
+    /verify POST
+    /signup POST
+    /verify/forgot POST
+    /reset-pw POST
+ /apis/user
+    / GET
+    /update PUT
+ /apis/login
+    / POST
+    /gg POST
+    /auth GET
+    /refresh_token POST
+    /logout POST
+ /apis/products
+    / GET
+    /list/related GET
+    /all GET
+    /search GET
+    /filter GET
+ /apis/comments
+    / GET
+    / POST
+ /apis/orders
+    /list GET
+    / GET
+    / POST
+ /apis/statistic
+    /monthly-revenue GET
+    /annual-revenue GET
+    /top-order GET
+
+req.body
+req.body.account
+req.body
+req.body.account
+req.query
+req.query
+req.query
+req.body
+req.query
+req.query
+req.body
+req.query
+req.query
+req.body
+req.body
+req.query
+req.body
+req.query
+req.body
+req.body.account
+req
+req.body.refresh_token
+req.body.token
+req.cookies.access_token
+req.query
+req.query
+req.body
+req.query
+req.query
+req.query
+req.query
+req.query
+req.query
+req.query
+req.user
+req.body
+
+# Functions
+
+postSendVerifyCode
+postSignUp
+postSendCodeForgotPW
+postResetPassword
+getProvince
+getDistrict
+getWardStreetList
+getDeliveryAddressList
+postAddDeliveryAddress
+delDeliveryAddress
+putSetDefaultDeliveryAddress
+postAddProduct
+getProductListByType
+removeProduct
+updateProduct
+postLogin
+getUserAdminList
+getCustomerList
+delCustomer
+getOrderList
+postUpdateOrderStatus
+getCommentList
+postComment
+postLogin
+postLoginWithGoogle
+getAuth
+postRefreshToken
+postLogout
+getOrderList
+getOrderDetails
+postCreateOrder
+getProduct
+getProductList
+getAllProducts
+getSearchProducts
+getFilterProducts
+getStaMonthlyRevenue
+getStaAnnualRevenue
+getTopProvinceOrder
+getUser
+putUpdateUser
+onDelCartItem
+onUpdateNumOfProd
+onDelAllCarts
+useState
+useEffect
+handleOnChange
+useEffect
+handleOnChange
+handleOnChange
+useState
+useEffect
+renderFilterMenu
+onShowDetails
+onCloseDetails
+totalPrice
+totalItemCarts
+useSelector
+useLocation
+useState
+onLogout
+useEffect
+useEffect
+useDispatch
+useHistory
+onLoginSuccess
+onLoginWithGoogle
+listSpecification
+showSpecification
+Specification
+useState
+onSeeMore
+useEffect
+useState
+useState
+useSelector
+useEffect
+onComment
+countItemInCart
+useState
+showCatalogs
+showOverviewInfo
+addCart
+useRef
+useState
+useEffect
+handleResize
+paginate
+showProductList
+useEffect
+useState
+onSort
+onFilterByPrice
+showProducts
+useState
+useEffect
+onScroll
+configStore
+renderRoutes
+useState
+useEffect
+generateOrderStaFilter
+useState
+useSelector
+showOrderList
+useEffect
+useSelector
+useState
+useDispatch
+handleUpdate
+useState
+useEffect
+getProvinceList
+getWardStreetList
+onAddAddress
+useState
+onDelDeliveryAdd
+onSetDefaultDeliveryAdd
+showAddressList
+useEffect
+useLocation
+useSelector
+useState
+renderComponent
+useEffect
+useState
+useEffect
+getUserAdminList
+useState
+onDelCustomer
+useEffect
+getCustomerList
+generateLabels
+useState
+useEffect
+getStaAnnualRevenue
+generateLabels
+useState
+useEffect
+getStaMonthlyRevenue
+useState
+useEffect
+onFinish
+generateFilterOrder
+useState
+updateOrderStatus
+UpdateOrderStatusModal
+useEffect
+useState
+onCompressFile
+onHandleSubmit
+useState
+onProductTypeChange
+onRenderProduct
+onCompressFile
+onGetDetailDesc
+onResetForm
+onValBeforeSubmit
+onSubmit
+useState
+onEdit
+generateFilterType
+useState
+onDelete
+onCloseEditModal
+useEffect
+useState
+handleSelected
+showTitleSelected
+renderMenuItem
+renderMenuComponent
+onLogin
+onLogout
+useDispatch
+useSelector
+useEffect
+useState
+useEffect
+showProducts
+convertTime
+useState
+showBrandList
+useState
+onSendCode
+onChangePassword
+useHistory
+useState
+onLoginSuccess
+onLogin
+getUserDeliveryAdd
+useDispatch
+useSelector
+useRef
+useState
+useSelector
+showOrderInfo
+onCheckout
+useState
+useEffect
+useState
+useEffect
+useParams
+useState
+useEffect
+addOptionToUrl
+removeOptionToUrl
+analysisQueryList
+useState
+useState
+getFilterProducts
+useEffect
+useEffect
+useState
+onChecked
+onCloseTag
+onCloseAll
+renderFilterOption
+showTagList
+useLocation
+useState
+getSearchProducts
+useEffect
+useEffect
+useState
+useRef
+onSendCode
+onSignUp
+replaceMongoKeyword
+queryString
+analysisQuery
+formatQueryString
+reduceProductName
+formatProductPrice
+calStar
+convertProductKey
+convertWidthScreen
+convertRateToText
+formatDate
+convertProductType
+convertSeriesChipCpu
+randomColor
+autoSearchOptions
+convertSeriesChip
+convertDiskSize
+convertDiskConnectionStd
+convertMainboardSocket
+
+
+
+
+
+
+
+
+
+
